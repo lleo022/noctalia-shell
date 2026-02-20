@@ -109,7 +109,7 @@ Rectangle {
 
       // Welcome back + Username on one line
       NText {
-        text: I18n.tr("system.welcome-back") + " " + HostService.displayName + "!"
+        text: I18n.tr("system.welcome-back") + " " + HostService.displayName.split(" ")[0] + "!"
         pointSize: Style.fontSizeXXL
         color: Color.mOnSurface
         horizontalAlignment: Text.AlignLeft
